@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+body {
+	
+	background-color: #ecf0f1;
+	
+}
+
+#topline {
+	
+	background-color: #fff;
+	height: 10px;
+	
+}
+
+#header {
+	
+	height: 135px;
+	background-color: #a0392b;
+	margin-bottom: 25px;
+	display: block;
+	box-shadow: 0px 2px 6px 0px #444;
+	
+}
+
+#logo_container {
+
+	width: 1080px;
+	margin: 0 auto;
+	
+	
+}
+
+#logo {
+	
+	height: 150px;
+	width: 250px;
+	border-radius: 0 0 10px 10px;
+	box-shadow: -1px 3px 6px 0px #222;
+	float: left;
+	
+}
+
+#contact {
+	
+	margin-top: 8px;
+	float: right;
+	color: #fff;
+	font-size: 14px;
+	text-align: right;
+	
+}
+
+#contact span {
+	
+	font-weight: bold;
+	font-size: 1.2em;
+	
+}
+
+#social {
+	
+	margin-top: 8px;
+	
+}
+
+#social span {
+	
+	padding-left: 5px;
+	
+}
+
+#container {
+	
+	background: #ecf0f1;
+	height: 1444px;
+	width: 1080px;
+	margin: auto;
+	
+}
+
+#navigator {
+	
+	float: left;
+	margin-top: 20px;
+	
+}
+
+#navigator ul {
+	
+	list-style-type: none;
+	width: 250px;
+	background-color: #2c3e50;
+	margin: 0 auto;
+	border-radius: 3px;
+	padding: 0;
+	box-shadow: -1px 3px 6px 0px #222;
+	
+	
+}
+
+#navigator li a {
+	
+	display: block;
+	color: #ccc;
+	text-decoration: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	border-bottom: 1px solid #000;
+	
+}
+
+#navigator li a:hover {
+	
+	background-color: #8e44ad;
+	color: #fff;
+	
+}
+
+#content {
+	
+	float: right;
+	width: 810px;
+	
+}
+
+#slideshow {
+
+	margin-bottom: 25px;
+	
+}
+
+#sequence {
+	
+	width: 810px;
+	border-radius: 5px;
+	box-shadow: -1px 3px 6px 0px #222;
+	
+}
+
+#deals {
+	
+	background-color: #ecf0f1;
+	width: 810px;
+	
+}
+
+.deal_head {
+	
+	background-color: #2c3e50;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 3px;
+	box-shadow: -1px 3px 6px 0px #222;
+	margin-bottom: 10px;
+	
+}
+
+.deal_content {
+	
+	margin-top: 5px;
+	border-radius: 3px;
+	
+}
+
+.deal_container {
+	
+	height: 200px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	
+}
+
+.deal_img {
+	
+	height: 180px;
+	background-position: center;
+	margin: 5px 10px 0px 0px;
+	
+}
+
+.dimg_container {
+	
+	float: left;
+	
+}
+
+.deal_text {
+	
+	text-align: justify;
+	font-size: 0.9em;
+	
+}
+
+#footer {
+	
+	background: #0c1e30;
+	text-align: center;
+	padding: 4px;
+	font-size: 12px;
+	color: #ddd;
+	
+}
