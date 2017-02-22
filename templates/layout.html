@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <title>{{ title }} - Musna Travel and Tours</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+	</head>
+	<body>
+		<div id="header">
+			<div id="logo_container">
+                <img alt='logo' id="logo" src="../static/images/logo.png" />
+				<div id="contact">
+					<div>
+						<span>Contact Us:</span> <br />
+						+63 (917) 570-1169 <br />
+						musnatravelandtours@gmail.com
+					</div>
+					<div id="social">
+						<span>
+							<a href="https://www.facebook.com/musnatravelandtours"><img src="../static/images/ficon.png" width=35 height=35 /></a>
+						</span>
+						<span>
+							<a href="#"><img src="../static/images/ticon.png" width=35 height=35 /></a>
+						</span>
+						<span>
+							<a href="#"><img src="../static/images/yicon.png" width=35 height=35 /></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+            {% block content %}{% endblock %}
+		</div>
+        <div id="footer">Copyright &#169; 2017 Musna Travel and Tours. All Rights Reserved.</div>
+	</body>
+</html>

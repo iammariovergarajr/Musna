@@ -1,79 +1,31 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Musna Travel and Tours</title>
-		<link rel="stylesheet" href="../static/styles.css">
-	</head>
-	<body>
-		<div id="header">
-			<div id="logo_container">
-				<img id="logo" src="../static/images/logo.png" />
-				<div id="contact">
-					<div>
-						<span>Contact Us:</span> <br />
-						+63 (917) 570-1169 <br />
-						musnatravelandtours@gmail.com
-					</div>
-					<div id="social">
-						<span>
-							<a href="https://www.facebook.com/musnatravelandtours"><img src="../static/images/ficon.png" width=35px height=35px /></a>
-						</span>
-						<span>
-							<a href="#"><img src="../static/images/ticon.png" width=35px height=35px /></a>
-						</span>
-						<span>
-							<a href="#"><img src="../static/images/yicon.png" width=35px height=35px /></a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="container">
-			<div id="navigator">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Package Deals</a></li>
-					<li><a href="#">Destinations</a></li>
-					<li><a href="#">About Us</a></li>
-				</ul>
-			</div>
-			<div id="content">
-				<div id="slideshow">
-					<img id="sequence" src="../static/images/background.jpg" />
-				</div>
-				<div id="deals">
-					<div class="deal_head">
-						<span>Promotions :</span>
-					</div>
-					<div class="deal_content">
-						<div class="deal_container">
-							<div class="dimg_container"><img  class="deal_img" src="../static/images/background.jpg" /></div>
-							<div class="deal_text">
-								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat velit ac ex sagittis, id placerat nunc luctus. Fusce placerat nibh id tellus ultrices, ac blandit purus sollicitudin. Pellentesque iaculis est vel diam tempor accumsan. Nam tempor nunc ac sapien fermentum porta.</p>
-							</div>
-						</div>
-						<div class="deal_container">
-							<div class="dimg_container"><img  class="deal_img" src="../static/images/background.jpg" /></div>
-							<div class="deal_text">
-								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat velit ac ex sagittis, id placerat nunc luctus. Fusce placerat nibh id tellus ultrices, ac blandit purus sollicitudin. Pellentesque iaculis est vel diam tempor accumsan. Nam tempor nunc ac sapien fermentum porta.</p>
-							</div>
-						</div>
-						<div class="deal_container">
-							<div class="dimg_container"><img  class="deal_img" src="../static/images/background.jpg" /></div>
-							<div class="deal_text">
-								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat velit ac ex sagittis, id placerat nunc luctus. Fusce placerat nibh id tellus ultrices, ac blandit purus sollicitudin. Pellentesque iaculis est vel diam tempor accumsan. Nam tempor nunc ac sapien fermentum porta.</p>
-							</div>
-						</div>
-						<div class="deal_container">
-							<div class="dimg_container"><img  class="deal_img" src="../static/images/background.jpg" /></div>
-							<div class="deal_text">
-								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat velit ac ex sagittis, id placerat nunc luctus. Fusce placerat nibh id tellus ultrices, ac blandit purus sollicitudin. Pellentesque iaculis est vel diam tempor accumsan. Nam tempor nunc ac sapien fermentum porta.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="footer">Copyright &#169; 2017 Musna Travel and Tours. All Rights Reserved.</div>
-	</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+<div id="navigator">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Package Deals</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+</div>
+<div id="content">
+    <div id="slideshow">
+        <img id="sequence" src="../static/images/background.jpg" />
+    </div>
+    <div id="deals">
+        <div class="deal_head">
+            <span>Promotions :</span>
+        </div>
+        <div class="deal_content">
+            {% for post in posts %}
+                <div class="deal_container">
+                    <div class="dimg_container"><img  class="deal_img" src="../static/images/background.jpg" /></div>
+                    <div class="deal_text">
+                        <p>{{ post.deal }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
